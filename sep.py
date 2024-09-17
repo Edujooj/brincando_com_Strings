@@ -1,4 +1,4 @@
 import os
 os.system('cls')
 
-print('A','L','U','R','A',sep='\t')
+print('A','L','U','R','A',sep='\n')
