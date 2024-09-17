@@ -1,8 +1,7 @@
 import os
 
-while True:
+def inicio():
     os.system('cls')
-
     text = input("digite algo ~> ") #A função input só retorna str
 
     print("O tipo primitivo desse valor ", type(text))
@@ -14,5 +13,17 @@ while True:
     print("Está em minúsculas? ", text.islower())
     print("Está capitalizada? ", text.istitle())
 
-    if input("repitir? ~> ") != 's':
-        break
+def repitir(): #Validação e reinicialização
+    try:
+        if input("repitir? ~> ").lower == 's':
+                main()
+    except:
+         repitir()
+
+
+def main():
+    inicio()
+    repitir()
+
+if __name__ == "__main__":
+    main()
