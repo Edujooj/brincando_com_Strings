@@ -1,10 +1,11 @@
 import os
+from math import sqrt
 
 def inicio():
     os.system('cls')
 
     num = int(input("digite um numero ~> "))
-    print("você digitou {}, o seu antecessor é {} e seu sucessor é {}\nA raiz quadrada é {:.2f}".format(num, num-1, num+1, num**(1/2)))
+    print("você digitou {}, o seu antecessor é {} e seu sucessor é {}\nA raiz quadrada é {:.2f}".format(num, num-1, num+1, sqrt(num)))
 
 def repitir():
     try:
