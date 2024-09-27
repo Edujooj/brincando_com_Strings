@@ -5,10 +5,10 @@ def inicio():
     # strip() função responsavel por remover caracteres ou espaços
     texto = input("digite algo ~> ").strip()
 
-    piramede_vertical(texto)
+    estrela(texto)
 
 
-def piramede_vertical(texto):
+def estrela(texto):
     tex = ""
     for t in texto:
         tex += t
